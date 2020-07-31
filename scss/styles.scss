@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Neon;
+    src: url("../font/Neon.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    height: 100vh;
+    width: 100vw;
+    padding: 50px;
+    font-family: Neon;
+    background: url("../assets/background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    #app-logo-title {
+        width: 400px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .glider-contain {
+        .glider {
+            .card {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                background-color: rgb(33, 33, 83);
+                margin: 10px;
+                color: #fff;
+                font-size: 1.2rem;
+                border-radius: 5px;
+
+                .heading {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 40px;
+                    background-color: rgb(67, 62, 144);
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin: 5px;
+                    padding: 3px;
+
+                    img {
+                        width: 35px;
+                        height: auto;
+                        background-color: rgb(67, 62, 144);
+                        border-radius: 2px;
+                        padding: 5px;
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                        }
+
+                        h6 {
+                            font-weight: normal;
+                            color: rgb(106, 101, 170);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1035px) {
+    .main {
+        .glider-contain {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+        #app-logo-title {
+            width: 300px;
+        }
+        .glider-contain {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .main {
+        #app-logo-title {
+            width: 200px;
+        }
+        .glider-contain {
+            width: 90%;
+        }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .main {
+        #app-logo-title {
+            width: 200px;
+        }
+        .glider-contain {
+            width: 100%;
+            .glider {
+                .card {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
